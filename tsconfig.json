@@ -6,14 +6,24 @@
   ],
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "noImplicitAny": false,
-    "noUnusedParameters": false,
+"paths": {
+  "@/*": ["src/*"],
+  "@components/*": ["src/components/*"],
+  "@utils/*": ["src/utils/*"]
+},
+    "target": "es2020",
+    "noImplicitAny": true,
+    "strict": true,
+    "noUnusedParameters": true,
     "skipLibCheck": true,
     "allowJs": true,
-    "noUnusedLocals": false,
-    "strictNullChecks": false
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "incremental": true
+
+
   }
 }
